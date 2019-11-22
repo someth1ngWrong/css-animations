@@ -1,0 +1,89 @@
+body {
+margin: 0;
+padding: 0;
+font-family: Verdana, sans-serif;
+font-weight: bold;
+background: black;
+color: red;
+font-size: 140px;
+}
+
+.box {
+  background: black;
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+filter: brightness(200%);
+}
+
+.text {
+  animation: shadow 4s ease infinite;
+}
+
+.text::before {
+  position: absolute;
+  content: "Странные дела";
+  filter: blur(2px);
+  mix-blend-mode: difference;
+}
+
+@keyframes shadow {
+  50% {
+    text-shadow: 0 0 10px;
+  }
+}
+
+.effect {
+  background: radial-gradient(circle, white, black 35%) center / 10% 10%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
+  animation: shine 15s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

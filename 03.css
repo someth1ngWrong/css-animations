@@ -1,0 +1,43 @@
+body {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: change-color 3s ease infinite;
+}
+body .box:nth-of-type(odd) {
+  background: black;
+  animation: change-color-2 3s ease infinite;
+}
+@keyframes change-color {
+  0% {
+    background: red;
+  }
+  50% {
+    transform: rotate(360deg);
+    background: black;
+    border-radius: 100%;
+  }
+  100% {
+    background: red;
+  }
+}
+@keyframes change-color-2 {
+  0% {
+    background: black;
+  }
+  50% {
+    transform: rotate(-360deg);
+    background: red;
+    border-radius: 100%;
+  }
+  100% {
+    background: black;
+  }
+}
